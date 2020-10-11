@@ -56,14 +56,14 @@ class DiscordRpc:
                 'start_timestamp': self.start,
                 'end_timestamp': self.start + 1000,
                 'large_image_key': self.large_image,
-                'large_image_text': 'Balistic Launcher 1.12.2',
+                'large_image_text': self.large_image_text,
                 'small_image_key': self.small_image,
-                'small_image_text': '',
-                'party_id': '',
-                'party_size': '',
-                'secrets_join': '',
-                'secrets_spectate': '',
-                'secrets_match': '',
+                'small_image_text': self.small_image_text,
+                'party_id': self.party_id,
+                'party_size': self.party_size,
+                'secrets_join': self.secrets_join,
+                'secrets_spectate': self.secrets_spectate,
+                'secrets_match': self.secrets_match,
             }
         )
 
