@@ -7,7 +7,7 @@ class DiscordRpc:
     def __init__(self, client_id, details, large_image, large_image_text='',
                  small_image='', small_image_text='',
                  party_id='', party_size='',
-                 join='', spectate='', match='',
+                 secrets_join='', secrets_spectate='', secrets_match='',
                  log=False):
         self.client_id = client_id
         self.details = details
@@ -15,7 +15,12 @@ class DiscordRpc:
         self.large_image = large_image
         self.large_image_text = large_image_text
         self.small_image = small_image
-        self.small_image_text = small_image
+        self.small_image_text = small_image_text
+        self.party_id = party_id
+        self.party_size = party_size
+        self.secrets_join = secrets_join
+        self.secrets_spectate = secrets_spectate
+        self.secrets_match = secrets_match
         self.log = log
         self.callbacks = {
             'ready': self.readyCallback,
@@ -56,9 +61,9 @@ class DiscordRpc:
                 'small_image_text': '',
                 'party_id': '',
                 'party_size': '',
-                'join': '',
-                'spectate': '',
-                'match': '',
+                'secrets_join': '',
+                'secrets_spectate': '',
+                'secrets_match': '',
             }
         )
 
