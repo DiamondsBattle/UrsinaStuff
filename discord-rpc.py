@@ -74,7 +74,7 @@ class DiscordRpc:
 
 if __name__ == '__main__':
     app = Ursina()
-    conn = DiscordRpc(client_id='token', details='Dans le lobby', large_image='logo')
+    conn = DiscordRpc(client_id='token', details='text', large_image='logo')
 
 
     def update():
